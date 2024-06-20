@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>feeedback table</title>
+    <style>
+        body{
+            background-image:  url(https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-size: cover;
+            
+        }
+       
+        table {
+            /* border: solid black ; */
+            margin-left: 300px;
+            margin-top: 100px;
+        }
+        table tr:nth-child(even){
+            background-color: aqua;
+        }
+        table tr:nth-child(odd){
+            background-color: aliceblue;
+        }
+        table th:nth-child(1){
+            background-color: white;
+        }
+        #email:focus{
+            background-color: rgb(237, 237, 151);
+            width: 250px;
+        }
+        form{
+            border: solid black;
+            border-radius: 20px;
+            width: 300px;
+            height: 300px;
+            font-weight: 600;
+            margin-left: 400px;
+            margin-top: 40px;
+            background-image: url(https://img.freepik.com/free-vector/gradient-minimalist-background_23-2149974334.jpg?size=626&ext=jpg&ga=GA1.1.365815768.1718795886&semt=ais_user);
+        }
+        .full{
+            margin: 10px 10px ;
+        }
+        .submit
+        {
+            margin-left: 20px;
+            margin-top: 10px;
+            background-color: black;
+            color: white;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <form>
+        <div class="full">
+        <h1>INPUT FORM</h1>
+        <p>EMAIL</p>
+        <input type="email" id="email" name="email" placeholder=" Enter your email">
+        <p>Password</p>
+        <input type="password" id="password" name="password" placeholder="Enter your password here">
+        <br>
+        <input type="submit" class="submit">
+    </div>
+    </form>
+    <table>
+        <th>How well do we perform on each of these aspects of our service</th> 
+        <tr>
+            <td></td>
+            <td>Execelent</td>
+            <td>very good</td>
+            <td>good</td>
+            <td>fair </td>
+            <td>poor</td>
+        </tr>
+        <tr>
+            <td>Quality</td>
+            <td><input type="radio" id="quality" name="quality"></td>
+            <td><input type="radio" id="quality" name="quality"></td>
+            <td><input type="radio" id="quality" name="quality"></td>
+            <td><input type="radio" id="quality" name="quality"></td>
+            <td><input type="radio" id="quality" name="quality"></td>
+            
+        </tr>
+        <tr>
+        
+        <td>speed of delivery</td>
+                <td><input type="radio"id="speed" name="speed"></td>
+                <td><input type="radio" id="speed" name="speed"></td>
+                <td><input type="radio" id="speed" name="speed"></td>
+                <td><input type="radio" id="speed" name="speed"></td>
+                <td><input type="radio" id="speed" name="speed"></td>
+            </tr>
+        <tr>
+     
+            <td>value of money</td>
+                <td><input type="radio" id="value" name="value"></td>
+                <td><input type="radio" id="value" name="value"></td>
+                <td><input type="radio" id="value" name="value"></td>
+                <td><input type="radio" id="value" name="value"></td>
+                <td><input type="radio" id="value" name="value"></td>
+    </tr>
+    <tr>
+        <td>Support availability</td>
+        <td><input type="radio" id="Support" name="Support"></td>
+        <td><input type="radio"  id="Support" name="Support"></td>
+        <td><input type="radio"  id="Support" name="Support"></td>
+        <td><input type="radio"  id="Support" name="Support"></td>
+        <td><input type="radio"  id="Support" name="Support"></td>
+    </tr>
+    </table>
+    
+    
+</body>
+</html>
